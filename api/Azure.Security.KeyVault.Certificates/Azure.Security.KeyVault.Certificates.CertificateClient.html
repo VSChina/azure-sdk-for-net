@@ -1,0 +1,3251 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CertificateClient
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CertificateClient
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient">
+  
+  
+  <h1 id="Azure_Security_KeyVault_Certificates_CertificateClient" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient" class="text-break">Class CertificateClient
+  </h1>
+  <div class="markdown level0 summary"><p>The CertificateClient provides synchronous and asynchronous methods to manage <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>s in Azure Key Vault. The client
+supports creating, retrieving, updating, deleting, purging, backing up, restoring and listing the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>, along with managing
+certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a>s and <a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>s. The client also supports listing <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a> for a soft-delete
+enabled key vault.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">CertificateClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Security.KeyVault.Certificates.html">Azure.Security.KeyVault.Certificates</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Security.KeyVault.Certificates.dll</h6>
+  <h5 id="Azure_Security_KeyVault_Certificates_CertificateClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CertificateClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient__ctor_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.#ctor*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient__ctor" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.#ctor">CertificateClient()</h4>
+  <div class="markdown level1 summary"><p>Protected constructor for mocking</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CertificateClient ();</code></pre>
+  </div>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient__ctor_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.#ctor*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient__ctor_System_Uri_Azure_Core_TokenCredential_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.#ctor(System.Uri,Azure.Core.TokenCredential)">CertificateClient(Uri, TokenCredential)</h4>
+  <div class="markdown level1 summary"><p>Creates a new certificate client for the specified vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateClient (Uri vaultUri, Azure.Core.TokenCredential credential);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">vaultUri</span></td>
+        <td><p>The vault on which the certificate client operates</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
+        <td><span class="parametername">credential</span></td>
+        <td><p>The credential used to authenticate requests to the vault</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient__ctor_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.#ctor*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient__ctor_System_Uri_Azure_Core_TokenCredential_Azure_Security_KeyVault_Certificates_CertificateClientOptions_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.#ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Certificates.CertificateClientOptions)">CertificateClient(Uri, TokenCredential, CertificateClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Creates a new certificate client for the specified vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateClient (Uri vaultUri, Azure.Core.TokenCredential credential, Azure.Security.KeyVault.Certificates.CertificateClientOptions options);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">vaultUri</span></td>
+        <td><p>The vault on which the certificate client operates</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
+        <td><span class="parametername">credential</span></td>
+        <td><p>The credential used to authenticate requests to the vault</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateClientOptions.html">CertificateClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Options that allow to configure the requests sent to Key Vault.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_BackupCertificate_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.BackupCertificate*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_BackupCertificate_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.BackupCertificate(System.String,System.Threading.CancellationToken)">BackupCertificate(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a backup of the certificate, including all versions, which can be used to restore the certificate to the state at the time of the backup in the case the certificate is deleted, or to
+restore the certificate to a different vault in the same region as the original value. This operation requires the certificate/backup permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;byte[]&gt; BackupCertificate (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to backup</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]&gt;</td>
+        <td><p>The certificate backup</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_BackupCertificateAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.BackupCertificateAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_BackupCertificateAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.BackupCertificateAsync(System.String,System.Threading.CancellationToken)">BackupCertificateAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a backup of the certificate, including all versions, which can be used to restore the certificate to the state at the time of the backup in the case the certificate is deleted, or to
+restore the certificate to a different vault in the same region as the original value. This operation requires the certificate/backup permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;byte[]&gt;&gt; BackupCertificateAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to backup</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]&gt;&gt;</td>
+        <td><p>The certificate backup</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_CancelCertificateOperation_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.CancelCertificateOperation*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_CancelCertificateOperation_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.CancelCertificateOperation(System.String,System.Threading.CancellationToken)">CancelCertificateOperation(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Cancels a pending <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a> in the key vault.  This operation requires the certificates/update permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Certificates.CertificateOperation CancelCertificateOperation (string certificateName, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to cancel the current pending operation of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a></td>
+        <td><p>The canceled certificate operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_CancelCertificateOperationAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.CancelCertificateOperationAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_CancelCertificateOperationAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.CancelCertificateOperationAsync(System.String,System.Threading.CancellationToken)">CancelCertificateOperationAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Cancels a pending <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a> in the key vault.  This operation requires the certificates/update permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Certificates.CertificateOperation&gt; CancelCertificateOperationAsync (string certificateName, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to cancel the current pending operation of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a>&gt;</td>
+        <td><p>The canceled certificate operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_CreateIssuer_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.CreateIssuer*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_CreateIssuer_Azure_Security_KeyVault_Certificates_Issuer_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.CreateIssuer(Azure.Security.KeyVault.Certificates.Issuer,System.Threading.CancellationToken)">CreateIssuer(Issuer, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates or replaces a certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> in the key vault. This operation requires the certificates/setissuers permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.Issuer&gt; CreateIssuer (Azure.Security.KeyVault.Certificates.Issuer issuer, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a></td>
+        <td><span class="parametername">issuer</span></td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> to add or replace in the vault</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a>&gt;</td>
+        <td><p>The created certificate issuer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_CreateIssuerAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.CreateIssuerAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_CreateIssuerAsync_Azure_Security_KeyVault_Certificates_Issuer_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.CreateIssuerAsync(Azure.Security.KeyVault.Certificates.Issuer,System.Threading.CancellationToken)">CreateIssuerAsync(Issuer, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates or replaces a certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> in the key vault. This operation requires the certificates/setissuers permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.Issuer&gt;&gt; CreateIssuerAsync (Azure.Security.KeyVault.Certificates.Issuer issuer, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a></td>
+        <td><span class="parametername">issuer</span></td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> to add or replace in the vault</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a>&gt;&gt;</td>
+        <td><p>The created certificate issuer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteCertificate_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteCertificate*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteCertificate_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteCertificate(System.String,System.Threading.CancellationToken)">DeleteCertificate(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes all versions of the specified <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>. If the vault is soft delete enabled, the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> will be marked for perminent deletion
+and can be recovered with <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateClient.html#Azure_Security_KeyVault_Certificates_CertificateClient_RecoverDeletedCertificate_System_String_System_Threading_CancellationToken_">RecoverDeletedCertificate(String, CancellationToken)</a>, or purged with <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateClient.html#Azure_Security_KeyVault_Certificates_CertificateClient_PurgeDeletedCertificate_System_String_System_Threading_CancellationToken_">PurgeDeletedCertificate(String, CancellationToken)</a>. This operation requires the certificates/delete permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.DeletedCertificate&gt; DeleteCertificate (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to delete</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a>&gt;</td>
+        <td><p>The details of the <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteCertificateAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteCertificateAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteCertificateAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteCertificateAsync(System.String,System.Threading.CancellationToken)">DeleteCertificateAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes all versions of the specified <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>. If the vault is soft delete enabled, the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> will be marked for perminent deletion
+and can be recovered with <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateClient.html#Azure_Security_KeyVault_Certificates_CertificateClient_RecoverDeletedCertificate_System_String_System_Threading_CancellationToken_">RecoverDeletedCertificate(String, CancellationToken)</a>, or purged with <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateClient.html#Azure_Security_KeyVault_Certificates_CertificateClient_PurgeDeletedCertificate_System_String_System_Threading_CancellationToken_">PurgeDeletedCertificate(String, CancellationToken)</a>. This operation requires the certificates/delete permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.DeletedCertificate&gt;&gt; DeleteCertificateAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to delete</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a>&gt;&gt;</td>
+        <td><p>The details of the <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteCertificateOperation_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteCertificateOperation*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteCertificateOperation_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteCertificateOperation(System.String,System.Threading.CancellationToken)">DeleteCertificateOperation(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes a pending <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a> in the key vault.  This operation requires the certificates/delete permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Certificates.CertificateOperation DeleteCertificateOperation (string certificateName, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to delete the current pending operation of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a></td>
+        <td><p>The deleted certificate operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteCertificateOperationAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteCertificateOperationAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteCertificateOperationAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteCertificateOperationAsync(System.String,System.Threading.CancellationToken)">DeleteCertificateOperationAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes a pending <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a> in the key vault.  This operation requires the certificates/delete permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Certificates.CertificateOperation&gt; DeleteCertificateOperationAsync (string certificateName, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to delete the current pending operation of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a>&gt;</td>
+        <td><p>The deleted certificate operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteContacts_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteContacts*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteContacts_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteContacts(System.Threading.CancellationToken)">DeleteContacts(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delets all certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>s from the key vault, replacing any existing contacts. This operation requires the certificates/managecontacts permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;System.Collections.Generic.IList&lt;Azure.Security.KeyVault.Certificates.Contact&gt;&gt; DeleteContacts (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>&gt;&gt;</td>
+        <td><p>The certificate contacts deleted from the vault</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteContactsAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteContactsAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteContactsAsync_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteContactsAsync(System.Threading.CancellationToken)">DeleteContactsAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delets all certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>s from the key vault, replacing any existing contacts. This operation requires the certificates/managecontacts permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IList&lt;Azure.Security.KeyVault.Certificates.Contact&gt;&gt;&gt; DeleteContactsAsync (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>&gt;&gt;&gt;</td>
+        <td><p>The certificate contacts deleted from the vault</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteIssuer_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteIssuer*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteIssuer_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteIssuer(System.String,System.Threading.CancellationToken)">DeleteIssuer(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes the specified certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> from the vault. This operation requires the certificates/deleteissuers permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.Issuer&gt; DeleteIssuer (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> to delete</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a>&gt;</td>
+        <td><p>The deleted certificate issuer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteIssuerAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteIssuerAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_DeleteIssuerAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.DeleteIssuerAsync(System.String,System.Threading.CancellationToken)">DeleteIssuerAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes the specified certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> from the vault. This operation requires the certificates/deleteissuers permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.Issuer&gt;&gt; DeleteIssuerAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> to delete</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a>&gt;&gt;</td>
+        <td><p>The deleted certificate issuer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificate_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificate*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificate_System_String_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificate(System.String,System.String,System.Threading.CancellationToken)">GetCertificate(String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a specific version of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>. This operation requires the certificates/get permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.Certificate&gt; GetCertificate (string name, string version, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to retrieve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>Ther version of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to retrieve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>&gt;</td>
+        <td><p>The requested <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateAsync(System.String,System.String,System.Threading.CancellationToken)">GetCertificateAsync(String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a specific version of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>. This operation requires the certificates/get permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.Certificate&gt;&gt; GetCertificateAsync (string name, string version, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to retrieve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>Ther version of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to retrieve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>&gt;&gt;</td>
+        <td><p>The requested <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateOperation_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateOperation*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateOperation_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateOperation(System.String,System.Threading.CancellationToken)">GetCertificateOperation(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a pending <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a> from the key vault.  This operation requires the certificates/get permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Certificates.CertificateOperation GetCertificateOperation (string certificateName, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to retrieve the current pending operation of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a></td>
+        <td><p>The given certificates current pending operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateOperationAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateOperationAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateOperationAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateOperationAsync(System.String,System.Threading.CancellationToken)">GetCertificateOperationAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets a pending <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a> from the key vault.  This operation requires the certificates/get permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Certificates.CertificateOperation&gt; GetCertificateOperationAsync (string certificateName, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to retrieve the current pending operation of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a>&gt;</td>
+        <td><p>The given certificates current pending operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificatePolicy_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificatePolicy*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificatePolicy_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificatePolicy(System.String,System.Threading.CancellationToken)">GetCertificatePolicy(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a> of the specified certificate. This operation requires the certificate/get permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificatePolicy&gt; GetCertificatePolicy (string certificateName, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>The name of the certificate to retrieve the policy of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a>&gt;</td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a> of the specified certificate</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificatePolicyAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificatePolicyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificatePolicyAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificatePolicyAsync(System.String,System.Threading.CancellationToken)">GetCertificatePolicyAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a> of the specified certificate. This operation requires the certificate/get permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificatePolicy&gt;&gt; GetCertificatePolicyAsync (string certificateName, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>The name of the certificate to retrieve the policy of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a>&gt;&gt;</td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a> of the specified certificate</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificates_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificates*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificates_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificates(System.Nullable{System.Boolean},System.Threading.CancellationToken)">GetCertificates(Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Enumerates the certificates in the vault, returning select properties of the certificate, sensative feilds of the certificate will not be returned.  This operation requires the certificates/list permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Pageable&lt;Azure.Security.KeyVault.Certificates.CertificateProperties&gt; GetCertificates (Nullable&lt;bool&gt; includePending = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">includePending</span></td>
+        <td><p>Specifies whether to include certificates in a pending state as well</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Pageable-1.html">Pageable</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateProperties.html">CertificateProperties</a>&gt;</td>
+        <td><p>An enumerable collection of certificate metadata</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificatesAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificatesAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificatesAsync_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificatesAsync(System.Nullable{System.Boolean},System.Threading.CancellationToken)">GetCertificatesAsync(Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Enumerates the certificates in the vault, returning select properties of the certificate, sensative feilds of the certificate will not be returned.  This operation requires the certificates/list permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.AsyncPageable&lt;Azure.Security.KeyVault.Certificates.CertificateProperties&gt; GetCertificatesAsync (Nullable&lt;bool&gt; includePending = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">includePending</span></td>
+        <td><p>Specifies whether to include certificates in a pending state as well</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.AsyncPageable-1.html">AsyncPageable</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateProperties.html">CertificateProperties</a>&gt;</td>
+        <td><p>An enumerable collection of certificate metadata</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateVersions_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateVersions*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateVersions_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateVersions(System.String,System.Threading.CancellationToken)">GetCertificateVersions(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Enumerates the versions of a specific certificate in the vault, returning select properties of the certificate versions, sensative feilds of the certificate will not be returned.  This operation requires
+the certificates/list permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual System.Collections.Generic.IEnumerable&lt;Azure.Security.KeyVault.Certificates.CertificateProperties&gt; GetCertificateVersions (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the certificate to retrieve the versions of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateProperties.html">CertificateProperties</a>&gt;</td>
+        <td><p>An enumerable collection of the certificate's versions</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateVersionsAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateVersionsAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateVersionsAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateVersionsAsync(System.String,System.Threading.CancellationToken)">GetCertificateVersionsAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Enumerates the versions of a specific certificate in the vault, returning select properties of the certificate versions, sensative feilds of the certificate will not be returned.  This operation requires
+the certificates/list permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.AsyncPageable&lt;Azure.Security.KeyVault.Certificates.CertificateProperties&gt; GetCertificateVersionsAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the certificate to retrieve the versions of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.AsyncPageable-1.html">AsyncPageable</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateProperties.html">CertificateProperties</a>&gt;</td>
+        <td><p>An enumerable collection of the certificate's versions</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateWithPolicy_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateWithPolicy*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateWithPolicy_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateWithPolicy(System.String,System.Threading.CancellationToken)">GetCertificateWithPolicy(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Returns the latest version of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> along with it's <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a>. This operation requires the certificates/get permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificateWithPolicy&gt; GetCertificateWithPolicy (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to retrieve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a>&gt;</td>
+        <td><p>A response containing the certificate and policy as a <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a> instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateWithPolicyAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateWithPolicyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetCertificateWithPolicyAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetCertificateWithPolicyAsync(System.String,System.Threading.CancellationToken)">GetCertificateWithPolicyAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Returns the latest version of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> along with it's <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a>. This operation requires the certificates/get permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificateWithPolicy&gt;&gt; GetCertificateWithPolicyAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to retrieve</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a>&gt;&gt;</td>
+        <td><p>A response containing the certificate and policy as a <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a> instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetContacts_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetContacts*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetContacts_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetContacts(System.Threading.CancellationToken)">GetContacts(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>s for the key vaults. This operation requires the certificates/managecontacts permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;System.Collections.Generic.IList&lt;Azure.Security.KeyVault.Certificates.Contact&gt;&gt; GetContacts (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>&gt;&gt;</td>
+        <td><p>The certificate contacts of the vault</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetContactsAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetContactsAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetContactsAsync_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetContactsAsync(System.Threading.CancellationToken)">GetContactsAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>s for the key vaults. This operation requires the certificates/managecontacts permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IList&lt;Azure.Security.KeyVault.Certificates.Contact&gt;&gt;&gt; GetContactsAsync (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>&gt;&gt;&gt;</td>
+        <td><p>The certificate contacts of the vault</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetDeletedCertificate_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetDeletedCertificate*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetDeletedCertificate_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetDeletedCertificate(System.String,System.Threading.CancellationToken)">GetDeletedCertificate(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves information about the specified deleted <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>. This operation is only applicable in vaults enabled for soft-delete, and
+requires the certificates/get permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.DeletedCertificate&gt; GetDeletedCertificate (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a>&gt;</td>
+        <td><p>The details of the <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetDeletedCertificateAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetDeletedCertificateAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetDeletedCertificateAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetDeletedCertificateAsync(System.String,System.Threading.CancellationToken)">GetDeletedCertificateAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves information about the specified deleted <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>. This operation is only applicable in vaults enabled for soft-delete, and
+requires the certificates/get permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.DeletedCertificate&gt;&gt; GetDeletedCertificateAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a>&gt;&gt;</td>
+        <td><p>The details of the <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetDeletedCertificates_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetDeletedCertificates*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetDeletedCertificates_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetDeletedCertificates(System.Threading.CancellationToken)">GetDeletedCertificates(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Enumerates the deleted certificates in the vault.  This operation is only available on soft-delete enabled vaults, and requires the certificates/list/get permissions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Pageable&lt;Azure.Security.KeyVault.Certificates.DeletedCertificate&gt; GetDeletedCertificates (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Pageable-1.html">Pageable</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a>&gt;</td>
+        <td><p>An enumerable collection of deleted certificates</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetDeletedCertificatesAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetDeletedCertificatesAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetDeletedCertificatesAsync_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetDeletedCertificatesAsync(System.Threading.CancellationToken)">GetDeletedCertificatesAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Enumerates the deleted certificates in the vault.  This operation is only available on soft-delete enabled vaults, and requires the certificates/list/get permissions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.AsyncPageable&lt;Azure.Security.KeyVault.Certificates.DeletedCertificate&gt; GetDeletedCertificatesAsync (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.AsyncPageable-1.html">AsyncPageable</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a>&gt;</td>
+        <td><p>An enumerable collection of deleted certificates</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetIssuer_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetIssuer*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetIssuer_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetIssuer(System.String,System.Threading.CancellationToken)">GetIssuer(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the specified certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> from the vault. This operation requires the certificates/getissuers permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.Issuer&gt; GetIssuer (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> to retreive</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a>&gt;</td>
+        <td><p>The retrieved certificate issuer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetIssuerAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetIssuerAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetIssuerAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetIssuerAsync(System.String,System.Threading.CancellationToken)">GetIssuerAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the specified certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> from the vault. This operation requires the certificates/getissuers permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.Issuer&gt;&gt; GetIssuerAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> to retreive</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a>&gt;&gt;</td>
+        <td><p>The retrieved certificate issuer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetIssuers_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetIssuers*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetIssuers_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetIssuers(System.Threading.CancellationToken)">GetIssuers(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Enumerates the certificate issuers in the vault, returning select properties of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a>, sensative feilds of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> will not be returned.  This operation requires the certificates/getissuers permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Pageable&lt;Azure.Security.KeyVault.Certificates.IssuerProperties&gt; GetIssuers (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Pageable-1.html">Pageable</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.IssuerProperties.html">IssuerProperties</a>&gt;</td>
+        <td><p>An enumerable collection of certificate issuers metadata</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_GetIssuersAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetIssuersAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_GetIssuersAsync_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.GetIssuersAsync(System.Threading.CancellationToken)">GetIssuersAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Enumerates the certificate issuers in the vault, returning select properties of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a>, sensative feilds of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> will not be returned. This operation requires the certificates/getissuers permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.AsyncPageable&lt;Azure.Security.KeyVault.Certificates.IssuerProperties&gt; GetIssuersAsync (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.AsyncPageable-1.html">AsyncPageable</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.IssuerProperties.html">IssuerProperties</a>&gt;</td>
+        <td><p>An enumerable collection of certificate issuers metadata</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_ImportCertificate_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.ImportCertificate*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_ImportCertificate_Azure_Security_KeyVault_Certificates_CertificateImportOptions_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.ImportCertificate(Azure.Security.KeyVault.Certificates.CertificateImportOptions,System.Threading.CancellationToken)">ImportCertificate(CertificateImportOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Imports a pre-existing certificate to the key vault. The specified certificate must be in PFX or PEM format, and must contain the private key as well as the x509 certificates. This operation requires the
+certifcates/import permission</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificateWithPolicy&gt; ImportCertificate (Azure.Security.KeyVault.Certificates.CertificateImportOptions certificateImportOptions, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateImportOptions.html">CertificateImportOptions</a></td>
+        <td><span class="parametername">certificateImportOptions</span></td>
+        <td><p>The details of the certificate to import to the key vault</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a>&gt;</td>
+        <td><p>The imported certificate and policy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_ImportCertificateAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.ImportCertificateAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_ImportCertificateAsync_Azure_Security_KeyVault_Certificates_CertificateImportOptions_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.ImportCertificateAsync(Azure.Security.KeyVault.Certificates.CertificateImportOptions,System.Threading.CancellationToken)">ImportCertificateAsync(CertificateImportOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Imports a pre-existing certificate to the key vault. The specified certificate must be in PFX or PEM format, and must contain the private key as well as the x509 certificates. This operation requires the
+certifcates/import permission</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificateWithPolicy&gt;&gt; ImportCertificateAsync (Azure.Security.KeyVault.Certificates.CertificateImportOptions certificateImportOptions, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateImportOptions.html">CertificateImportOptions</a></td>
+        <td><span class="parametername">certificateImportOptions</span></td>
+        <td><p>The details of the certificate to import to the key vault</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a>&gt;&gt;</td>
+        <td><p>The imported certificate and policy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_MergeCertificate_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.MergeCertificate*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_MergeCertificate_Azure_Security_KeyVault_Certificates_CertificateMergeOptions_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.MergeCertificate(Azure.Security.KeyVault.Certificates.CertificateMergeOptions,System.Threading.CancellationToken)">MergeCertificate(CertificateMergeOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Merges a certificate or a certificate chain with a key pair currently available in the service. This operation requires the certificate/create permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificateWithPolicy&gt; MergeCertificate (Azure.Security.KeyVault.Certificates.CertificateMergeOptions certificateMergeOptions, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateMergeOptions.html">CertificateMergeOptions</a></td>
+        <td><span class="parametername">certificateMergeOptions</span></td>
+        <td><p>The details of the certificate or certificate chain to merge into the key vault.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a>&gt;</td>
+        <td><p>The merged certificate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_MergeCertificateAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.MergeCertificateAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_MergeCertificateAsync_Azure_Security_KeyVault_Certificates_CertificateMergeOptions_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.MergeCertificateAsync(Azure.Security.KeyVault.Certificates.CertificateMergeOptions,System.Threading.CancellationToken)">MergeCertificateAsync(CertificateMergeOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Merges a certificate or a certificate chain with a key pair currently available in the service. This operation requires the certificate/create permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificateWithPolicy&gt;&gt; MergeCertificateAsync (Azure.Security.KeyVault.Certificates.CertificateMergeOptions certificateMergeOptions, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateMergeOptions.html">CertificateMergeOptions</a></td>
+        <td><span class="parametername">certificateMergeOptions</span></td>
+        <td><p>The details of the certificate or certificate chain to merge into the key vault.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a>&gt;&gt;</td>
+        <td><p>The merged certificate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_PurgeDeletedCertificate_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.PurgeDeletedCertificate*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_PurgeDeletedCertificate_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.PurgeDeletedCertificate(System.String,System.Threading.CancellationToken)">PurgeDeletedCertificate(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Permanently and irreversibly deletes the specified deleted certificate, without the possibility of recovery. This operation is only applicable in vaults enabled for soft-delete, and
+requires the certificates/purge permission. The operation is not available if the DeletedCertificate.RecoveryLevel of the DeletedCertificate does not specify 'Purgeable'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response PurgeDeletedCertificate (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a> to perminantly delete</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response.html">Response</a></td>
+        <td><p>The http response from the service</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_PurgeDeletedCertificateAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.PurgeDeletedCertificateAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_PurgeDeletedCertificateAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.PurgeDeletedCertificateAsync(System.String,System.Threading.CancellationToken)">PurgeDeletedCertificateAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Permanently and irreversibly deletes the specified deleted certificate, without the possibility of recovery. This operation is only applicable in vaults enabled for soft-delete, and
+requires the certificates/purge permission. The operation is not available if the DeletedCertificate.RecoveryLevel of the DeletedCertificate does not specify 'Purgeable'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; PurgeDeletedCertificateAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a> to perminantly delete</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_RecoverDeletedCertificate_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.RecoverDeletedCertificate*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_RecoverDeletedCertificate_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.RecoverDeletedCertificate(System.String,System.Threading.CancellationToken)">RecoverDeletedCertificate(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Recovers the <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a> to its pre-deleted state. This operation is only applicable in vaults enabled for soft-delete, and
+requires the certificates/recover permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificateWithPolicy&gt; RecoverDeletedCertificate (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a>&gt;</td>
+        <td><p>The recovered certificate and policy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_RecoverDeletedCertificateAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.RecoverDeletedCertificateAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_RecoverDeletedCertificateAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.RecoverDeletedCertificateAsync(System.String,System.Threading.CancellationToken)">RecoverDeletedCertificateAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Recovers the <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a> to its pre-deleted state. This operation is only applicable in vaults enabled for soft-delete, and
+requires the certificates/recover permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificateWithPolicy&gt;&gt; RecoverDeletedCertificateAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a>&gt;&gt;</td>
+        <td><p>The recovered certificate and policy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_RestoreCertificate_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.RestoreCertificate*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_RestoreCertificate_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.RestoreCertificate(System.Byte[],System.Threading.CancellationToken)">RestoreCertificate(Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Restores a <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>, including all versions, from a backup created from the <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateClient.html#Azure_Security_KeyVault_Certificates_CertificateClient_BackupCertificate_System_String_System_Threading_CancellationToken_">BackupCertificate(String, CancellationToken)</a> or <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateClient.html#Azure_Security_KeyVault_Certificates_CertificateClient_BackupCertificateAsync_System_String_System_Threading_CancellationToken_">BackupCertificateAsync(String, CancellationToken)</a>. The backup must be restored
+to a vault in the same region as its original vault.  This operation requires the certificate/restore permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificateWithPolicy&gt; RestoreCertificate (byte[] backup, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">backup</span></td>
+        <td><p>The backup of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to restore</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a>&gt;</td>
+        <td><p>The restored certificate and policy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_RestoreCertificateAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.RestoreCertificateAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_RestoreCertificateAsync_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.RestoreCertificateAsync(System.Byte[],System.Threading.CancellationToken)">RestoreCertificateAsync(Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Restores a <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>, including all versions, from a backup created from the <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateClient.html#Azure_Security_KeyVault_Certificates_CertificateClient_BackupCertificate_System_String_System_Threading_CancellationToken_">BackupCertificate(String, CancellationToken)</a> or <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateClient.html#Azure_Security_KeyVault_Certificates_CertificateClient_BackupCertificateAsync_System_String_System_Threading_CancellationToken_">BackupCertificateAsync(String, CancellationToken)</a>. The backup must be restored
+to a vault in the same region as its original vault.  This operation requires the certificate/restore permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificateWithPolicy&gt;&gt; RestoreCertificateAsync (byte[] backup, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">backup</span></td>
+        <td><p>The backup of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> to restore</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a>&gt;&gt;</td>
+        <td><p>The restored certificate and policy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_SetContacts_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.SetContacts*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_SetContacts_System_Collections_Generic_IEnumerable_Azure_Security_KeyVault_Certificates_Contact__System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.SetContacts(System.Collections.Generic.IEnumerable{Azure.Security.KeyVault.Certificates.Contact},System.Threading.CancellationToken)">SetContacts(IEnumerable&lt;Contact&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sets the certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>s for the key vault, replacing any existing contacts. This operation requires the certificates/managecontacts permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;System.Collections.Generic.IList&lt;Azure.Security.KeyVault.Certificates.Contact&gt;&gt; SetContacts (System.Collections.Generic.IEnumerable&lt;Azure.Security.KeyVault.Certificates.Contact&gt; contacts, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>&gt;</td>
+        <td><span class="parametername">contacts</span></td>
+        <td><p>The certificate contacts for the vault</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>&gt;&gt;</td>
+        <td><p>The updated certificate contacts of the vault</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_SetContactsAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.SetContactsAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_SetContactsAsync_System_Collections_Generic_IEnumerable_Azure_Security_KeyVault_Certificates_Contact__System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.SetContactsAsync(System.Collections.Generic.IEnumerable{Azure.Security.KeyVault.Certificates.Contact},System.Threading.CancellationToken)">SetContactsAsync(IEnumerable&lt;Contact&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sets the certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>s for the key vault, replacing any existing contacts. This operation requires the certificates/managecontacts permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IList&lt;Azure.Security.KeyVault.Certificates.Contact&gt;&gt;&gt; SetContactsAsync (System.Collections.Generic.IEnumerable&lt;Azure.Security.KeyVault.Certificates.Contact&gt; contacts, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>&gt;</td>
+        <td><span class="parametername">contacts</span></td>
+        <td><p>The certificate contacts for the vault</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>&gt;&gt;&gt;</td>
+        <td><p>The updated certificate contacts of the vault</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_StartCreateCertificate_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.StartCreateCertificate*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_StartCreateCertificate_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.StartCreateCertificate(System.String,System.Threading.CancellationToken)">StartCreateCertificate(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Starts a long running operation to create a <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> in the vault, using the default certificate policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Certificates.CertificateOperation StartCreateCertificate (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the certificate to create</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a></td>
+        <td><p>A <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a> which contians details on the create operation, and can be used to retrieve updated status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Certificates_CertificateClient_StartCreateCertificate_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If no certificate with the specified name exists it will be created, otherwise a new version of the existing certificate will be created. This operation requires the certificates/create permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_StartCreateCertificate_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.StartCreateCertificate*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_StartCreateCertificate_System_String_Azure_Security_KeyVault_Certificates_CertificatePolicy_System_Nullable_System_Boolean__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.StartCreateCertificate(System.String,Azure.Security.KeyVault.Certificates.CertificatePolicy,System.Nullable{System.Boolean},System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">StartCreateCertificate(String, CertificatePolicy, Nullable&lt;Boolean&gt;, IDictionary&lt;String,String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Starts a long running operation to create a <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> in the vault with the specified certificate policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Certificates.CertificateOperation StartCreateCertificate (string name, Azure.Security.KeyVault.Certificates.CertificatePolicy policy, Nullable&lt;bool&gt; enabled = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the certificate to create</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a></td>
+        <td><span class="parametername">policy</span></td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a> which governs the proprerties and lifecycle of the created certificate</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">enabled</span></td>
+        <td><p>Specifies whether the certificate should be created in an enabled state</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">tags</span></td>
+        <td><p>Tags to be applied to the created certificate</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a></td>
+        <td><p>A <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a> which contians details on the create operation, and can be used to retrieve updated status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Certificates_CertificateClient_StartCreateCertificate_System_String_Azure_Security_KeyVault_Certificates_CertificatePolicy_System_Nullable_System_Boolean__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If no certificate with the specified name exists it will be created, otherwise a new version of the existing certificate will be created. This operation requires the certificates/create permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_StartCreateCertificateAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.StartCreateCertificateAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_StartCreateCertificateAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.StartCreateCertificateAsync(System.String,System.Threading.CancellationToken)">StartCreateCertificateAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Starts a long running operation to create a <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> in the vault, using the default certificate policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Certificates.CertificateOperation&gt; StartCreateCertificateAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the certificate to create</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a>&gt;</td>
+        <td><p>A <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a> which contians details on the create operation, and can be used to retrieve updated status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Certificates_CertificateClient_StartCreateCertificateAsync_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If no certificate with the specified name exists it will be created, otherwise a new version of the existing certificate will be created. This operation requires the certificates/create permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_StartCreateCertificateAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.StartCreateCertificateAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_StartCreateCertificateAsync_System_String_Azure_Security_KeyVault_Certificates_CertificatePolicy_System_Nullable_System_Boolean__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.StartCreateCertificateAsync(System.String,Azure.Security.KeyVault.Certificates.CertificatePolicy,System.Nullable{System.Boolean},System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">StartCreateCertificateAsync(String, CertificatePolicy, Nullable&lt;Boolean&gt;, IDictionary&lt;String,String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Starts a long running operation to create a <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> in the vault with the specified certificate policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Certificates.CertificateOperation&gt; StartCreateCertificateAsync (string name, Azure.Security.KeyVault.Certificates.CertificatePolicy policy, Nullable&lt;bool&gt; enabled = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the certificate to create</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a></td>
+        <td><span class="parametername">policy</span></td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a> which governs the proprerties and lifecycle of the created certificate</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">enabled</span></td>
+        <td><p>Specifies whether the certificate should be created in an enabled state</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">tags</span></td>
+        <td><p>Tags to be applied to the created certificate</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a>&gt;</td>
+        <td><p>A <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a> which contians details on the create operation, and can be used to retrieve updated status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Certificates_CertificateClient_StartCreateCertificateAsync_System_String_Azure_Security_KeyVault_Certificates_CertificatePolicy_System_Nullable_System_Boolean__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If no certificate with the specified name exists it will be created, otherwise a new version of the existing certificate will be created. This operation requires the certificates/create permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_UpdateCertificatePolicy_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.UpdateCertificatePolicy*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_UpdateCertificatePolicy_System_String_Azure_Security_KeyVault_Certificates_CertificatePolicy_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.UpdateCertificatePolicy(System.String,Azure.Security.KeyVault.Certificates.CertificatePolicy,System.Threading.CancellationToken)">UpdateCertificatePolicy(String, CertificatePolicy, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates the <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a> of the specified certificate. This operation requires the certificate/update permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificatePolicy&gt; UpdateCertificatePolicy (string certificateName, Azure.Security.KeyVault.Certificates.CertificatePolicy policy, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>The name of the certificate to update the policy of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a></td>
+        <td><span class="parametername">policy</span></td>
+        <td><p>The updated policy for the specified certificate</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a>&gt;</td>
+        <td><p>The updated certificate policy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_UpdateCertificatePolicyAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.UpdateCertificatePolicyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_UpdateCertificatePolicyAsync_System_String_Azure_Security_KeyVault_Certificates_CertificatePolicy_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.UpdateCertificatePolicyAsync(System.String,Azure.Security.KeyVault.Certificates.CertificatePolicy,System.Threading.CancellationToken)">UpdateCertificatePolicyAsync(String, CertificatePolicy, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates the <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a> of the specified certificate. This operation requires the certificate/update permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.CertificatePolicy&gt;&gt; UpdateCertificatePolicyAsync (string certificateName, Azure.Security.KeyVault.Certificates.CertificatePolicy policy, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">certificateName</span></td>
+        <td><p>The name of the certificate to update the policy of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a></td>
+        <td><span class="parametername">policy</span></td>
+        <td><p>The updated policy for the specified certificate</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a>&gt;&gt;</td>
+        <td><p>The updated certificate policy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_UpdateCertificateProperties_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.UpdateCertificateProperties*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_UpdateCertificateProperties_Azure_Security_KeyVault_Certificates_CertificateProperties_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.UpdateCertificateProperties(Azure.Security.KeyVault.Certificates.CertificateProperties,System.Threading.CancellationToken)">UpdateCertificateProperties(CertificateProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates the specified <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> with the specified values for its mutable properties. This operation requires the certificates/update permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.Certificate&gt; UpdateCertificateProperties (Azure.Security.KeyVault.Certificates.CertificateProperties properties, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateProperties.html">CertificateProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateProperties.html">CertificateProperties</a> object with updated properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>&gt;</td>
+        <td><p>The updated <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_UpdateCertificatePropertiesAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.UpdateCertificatePropertiesAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_UpdateCertificatePropertiesAsync_Azure_Security_KeyVault_Certificates_CertificateProperties_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.UpdateCertificatePropertiesAsync(Azure.Security.KeyVault.Certificates.CertificateProperties,System.Threading.CancellationToken)">UpdateCertificatePropertiesAsync(CertificateProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates the specified <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a> with the specified values for its mutable properties. This operation requires the certificates/update permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.Certificate&gt;&gt; UpdateCertificatePropertiesAsync (Azure.Security.KeyVault.Certificates.CertificateProperties properties, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateProperties.html">CertificateProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateProperties.html">CertificateProperties</a> object with updated properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>&gt;&gt;</td>
+        <td><p>The updated <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_UpdateIssuer_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.UpdateIssuer*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_UpdateIssuer_Azure_Security_KeyVault_Certificates_Issuer_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.UpdateIssuer(Azure.Security.KeyVault.Certificates.Issuer,System.Threading.CancellationToken)">UpdateIssuer(Issuer, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates the specified certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> in the vault, only updating the specified fields, others will remain unchanged. This operation requires the certificates/setissuers permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Certificates.Issuer&gt; UpdateIssuer (Azure.Security.KeyVault.Certificates.Issuer issuer, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a></td>
+        <td><span class="parametername">issuer</span></td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> to update in the vault</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a>&gt;</td>
+        <td><p>The updated certificate issuer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Certificates_CertificateClient_UpdateIssuerAsync_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.UpdateIssuerAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_CertificateClient_UpdateIssuerAsync_Azure_Security_KeyVault_Certificates_Issuer_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Certificates.CertificateClient.UpdateIssuerAsync(Azure.Security.KeyVault.Certificates.Issuer,System.Threading.CancellationToken)">UpdateIssuerAsync(Issuer, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates the specified certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> in the vault, only updating the specified fields, others will remain unchanged. This operation requires the certificates/setissuers permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Certificates.Issuer&gt;&gt; UpdateIssuerAsync (Azure.Security.KeyVault.Certificates.Issuer issuer, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a></td>
+        <td><span class="parametername">issuer</span></td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a> to update in the vault</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a>&gt;&gt;</td>
+        <td><p>The updated certificate issuer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

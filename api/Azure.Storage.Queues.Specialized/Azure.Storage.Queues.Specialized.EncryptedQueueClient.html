@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EncryptedQueueClient
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EncryptedQueueClient
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient">
+  
+  
+  <h1 id="Azure_Storage_Queues_Specialized_EncryptedQueueClient" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient" class="text-break">Class EncryptedQueueClient
+  </h1>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="Azure.Storage.Queues.Specialized.EncryptedQueueClient.html">EncryptedQueueClient</a> allows you to manipulate
+Azure Storage queues with client-side encryption.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html">QueueClient</a></div>
+    <div class="level2"><span class="xref">EncryptedQueueClient</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_AccountName">QueueClient.AccountName</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_ClearMessages_System_Threading_CancellationToken_">QueueClient.ClearMessages(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_ClearMessagesAsync_System_Threading_CancellationToken_">QueueClient.ClearMessagesAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_">QueueClient.Create(IDictionary&lt;String,String&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_">QueueClient.CreateAsync(IDictionary&lt;String,String&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_Delete_System_Threading_CancellationToken_">QueueClient.Delete(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_DeleteAsync_System_Threading_CancellationToken_">QueueClient.DeleteAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_DeleteMessage_System_String_System_String_System_Threading_CancellationToken_">QueueClient.DeleteMessage(String, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_DeleteMessageAsync_System_String_System_String_System_Threading_CancellationToken_">QueueClient.DeleteMessageAsync(String, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_DequeueMessages_System_Nullable_System_Int32__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_">QueueClient.DequeueMessages(Nullable&lt;Int32&gt;, Nullable&lt;TimeSpan&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_DequeueMessagesAsync_System_Nullable_System_Int32__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_">QueueClient.DequeueMessagesAsync(Nullable&lt;Int32&gt;, Nullable&lt;TimeSpan&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_EnqueueMessage_System_String_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_">QueueClient.EnqueueMessage(String, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_EnqueueMessageAsync_System_String_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_">QueueClient.EnqueueMessageAsync(String, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_GetAccessPolicy_System_Threading_CancellationToken_">QueueClient.GetAccessPolicy(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_GetAccessPolicyAsync_System_Threading_CancellationToken_">QueueClient.GetAccessPolicyAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_GetProperties_System_Threading_CancellationToken_">QueueClient.GetProperties(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_GetPropertiesAsync_System_Threading_CancellationToken_">QueueClient.GetPropertiesAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_MaxMessagesPeek">QueueClient.MaxMessagesPeek</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_MessageMaxBytes">QueueClient.MessageMaxBytes</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_MessagesUri">QueueClient.MessagesUri</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_Name">QueueClient.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_PeekMessages_System_Nullable_System_Int32__System_Threading_CancellationToken_">QueueClient.PeekMessages(Nullable&lt;Int32&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_PeekMessagesAsync_System_Nullable_System_Int32__System_Threading_CancellationToken_">QueueClient.PeekMessagesAsync(Nullable&lt;Int32&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_SetAccessPolicy_System_Collections_Generic_IEnumerable_Azure_Storage_Queues_Models_SignedIdentifier__System_Threading_CancellationToken_">QueueClient.SetAccessPolicy(IEnumerable&lt;SignedIdentifier&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_SetAccessPolicyAsync_System_Collections_Generic_IEnumerable_Azure_Storage_Queues_Models_SignedIdentifier__System_Threading_CancellationToken_">QueueClient.SetAccessPolicyAsync(IEnumerable&lt;SignedIdentifier&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_">QueueClient.SetMetadata(IDictionary&lt;String,String&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_">QueueClient.SetMetadataAsync(IDictionary&lt;String,String&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_UpdateMessage_System_String_System_String_System_String_System_TimeSpan_System_Threading_CancellationToken_">QueueClient.UpdateMessage(String, String, String, TimeSpan, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_UpdateMessageAsync_System_String_System_String_System_String_System_TimeSpan_System_Threading_CancellationToken_">QueueClient.UpdateMessageAsync(String, String, String, TimeSpan, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_Uri">QueueClient.Uri</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Storage.Queues.Specialized.html">Azure.Storage.Queues.Specialized</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Storage.Queues.Cryptography.dll</h6>
+  <h5 id="Azure_Storage_Queues_Specialized_EncryptedQueueClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EncryptedQueueClient : Azure.Storage.Queues.QueueClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Azure_Storage_Queues_Specialized_EncryptedQueueClient__ctor_" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Queues_Specialized_EncryptedQueueClient__ctor" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient.#ctor">EncryptedQueueClient()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.Specialized.EncryptedQueueClient.html">EncryptedQueueClient</a>
+class for mocking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EncryptedQueueClient ();</code></pre>
+  </div>
+  
+  
+  <a id="Azure_Storage_Queues_Specialized_EncryptedQueueClient__ctor_" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Queues_Specialized_EncryptedQueueClient__ctor_System_String_System_String_" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient.#ctor(System.String,System.String)">EncryptedQueueClient(String, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.Specialized.EncryptedQueueClient.html">EncryptedQueueClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EncryptedQueueClient (string connectionString, string queueName);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td><p>A connection string includes the authentication information
+required for your application to access data in an Azure Storage
+account at runtime.</p>
+<p>For more information, <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string"></a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">queueName</span></td>
+        <td><p>The name of the encrypted queue in the storage account to reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Queues_Specialized_EncryptedQueueClient__ctor_" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Queues_Specialized_EncryptedQueueClient__ctor_System_Uri_Azure_Storage_Queues_QueueClientOptions_" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient.#ctor(System.Uri,Azure.Storage.Queues.QueueClientOptions)">EncryptedQueueClient(Uri, QueueClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.Specialized.EncryptedQueueClient.html">EncryptedQueueClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EncryptedQueueClient (Uri queueUri, Azure.Storage.Queues.QueueClientOptions options = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">queueUri</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> referencing the encrypted queue that includes the
+name of the account, and the name of the queue.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClientOptions.html">QueueClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Queues_Specialized_EncryptedQueueClient__ctor_" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Queues_Specialized_EncryptedQueueClient__ctor_System_String_System_String_Azure_Storage_Queues_QueueClientOptions_" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient.#ctor(System.String,System.String,Azure.Storage.Queues.QueueClientOptions)">EncryptedQueueClient(String, String, QueueClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.Specialized.EncryptedQueueClient.html">EncryptedQueueClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EncryptedQueueClient (string connectionString, string queueName, Azure.Storage.Queues.QueueClientOptions options);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td><p>A connection string includes the authentication information
+required for your application to access data in an Azure Storage
+account at runtime.</p>
+<p>For more information, <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string"></a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">queueName</span></td>
+        <td><p>The name of the encrypted queue in the storage account to reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClientOptions.html">QueueClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Queues_Specialized_EncryptedQueueClient__ctor_" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Queues_Specialized_EncryptedQueueClient__ctor_System_Uri_Azure_Core_TokenCredential_Azure_Storage_Queues_QueueClientOptions_" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient.#ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Queues.QueueClientOptions)">EncryptedQueueClient(Uri, TokenCredential, QueueClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.Specialized.EncryptedQueueClient.html">EncryptedQueueClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EncryptedQueueClient (Uri queueUri, Azure.Core.TokenCredential credential, Azure.Storage.Queues.QueueClientOptions options = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">queueUri</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> referencing the encrypted queue that includes the
+name of the account, and the name of the queue.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
+        <td><span class="parametername">credential</span></td>
+        <td><p>The token credential used to sign requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClientOptions.html">QueueClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Queues_Specialized_EncryptedQueueClient__ctor_" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Queues_Specialized_EncryptedQueueClient__ctor_System_Uri_Azure_Storage_StorageSharedKeyCredential_Azure_Storage_Queues_QueueClientOptions_" data-uid="Azure.Storage.Queues.Specialized.EncryptedQueueClient.#ctor(System.Uri,Azure.Storage.StorageSharedKeyCredential,Azure.Storage.Queues.QueueClientOptions)">EncryptedQueueClient(Uri, StorageSharedKeyCredential, QueueClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.Specialized.EncryptedQueueClient.html">EncryptedQueueClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EncryptedQueueClient (Uri queueUri, Azure.Storage.StorageSharedKeyCredential credential, Azure.Storage.Queues.QueueClientOptions options = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">queueUri</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> referencing the encrypted queue that includes the
+name of the account, and the name of the queue.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage/Azure.Storage.StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></td>
+        <td><span class="parametername">credential</span></td>
+        <td><p>The shared key credential used to sign requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClientOptions.html">QueueClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1303 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDocumentsOperations
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDocumentsOperations
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Search.IDocumentsOperations">
+  
+  
+  <h1 id="Microsoft_Azure_Search_IDocumentsOperations" data-uid="Microsoft.Azure.Search.IDocumentsOperations" class="text-break">Interface IDocumentsOperations
+  </h1>
+  <div class="markdown level0 summary"><p>Defines operations for querying an index and uploading, merging, and deleting documents.
+<a href="https://docs.microsoft.com/rest/api/searchservice/Document-operations"></a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Search.html">Microsoft.Azure.Search</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Search.Data.dll</h6>
+  <h5 id="Microsoft_Azure_Search_IDocumentsOperations_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDocumentsOperations</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Search_IDocumentsOperations_AutocompleteWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.AutocompleteWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Search_IDocumentsOperations_AutocompleteWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Search_Models_AutocompleteParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.AutocompleteWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Search.Models.AutocompleteParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AutocompleteWithHttpMessagesAsync(String, String, AutocompleteParameters, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Queries the number of documents in the Azure Search index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.AutocompleteResult&gt;&gt; AutocompleteWithHttpMessagesAsync (string searchText, string suggesterName, Microsoft.Azure.Search.Models.AutocompleteParameters autocompleteParameters = null, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">searchText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">suggesterName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.AutocompleteParameters.html">AutocompleteParameters</a></td>
+        <td><span class="parametername">autocompleteParameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchRequestOptions.html">SearchRequestOptions</a></td>
+        <td><span class="parametername">searchRequestOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.rest.azure.azureoperationresponse-1">AzureOperationResponse</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.AutocompleteResult.html">AutocompleteResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Search_IDocumentsOperations_ContinueSearchWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.ContinueSearchWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Search_IDocumentsOperations_ContinueSearchWithHttpMessagesAsync_Microsoft_Azure_Search_Models_SearchContinuationToken_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.ContinueSearchWithHttpMessagesAsync(Microsoft.Azure.Search.Models.SearchContinuationToken,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ContinueSearchWithHttpMessagesAsync(SearchContinuationToken, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the next page of search results from the Azure Search index.
+<a href="https://docs.microsoft.com/rest/api/searchservice/Search-Documents"></a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;&gt; ContinueSearchWithHttpMessagesAsync (Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchContinuationToken.html">SearchContinuationToken</a></td>
+        <td><span class="parametername">continuationToken</span></td>
+        <td><p>Encapsulates the state required to fetch the next page of search results from the index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchRequestOptions.html">SearchRequestOptions</a></td>
+        <td><span class="parametername">searchRequestOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.rest.azure.azureoperationresponse-1">AzureOperationResponse</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.DocumentSearchResult-1.html">DocumentSearchResult</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.Document.html">Document</a>&gt;&gt;&gt;</td>
+        <td><p>Response containing the documents matching the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Search_IDocumentsOperations_ContinueSearchWithHttpMessagesAsync_Microsoft_Azure_Search_Models_SearchContinuationToken_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  The non-generic overloads of the ContinueSearch, ContinueSearchAsync, and
+  ContinueSearchWithHttpMessagesAsync methods make a best-effort attempt to map JSON types in the response
+  payload to .NET types. See
+<a class="xref" href="Microsoft.Azure.Search.IDocumentsOperations.html#Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_">GetWithHttpMessagesAsync(String, IEnumerable&lt;String&gt;, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</a>
+  for more information.
+</p>
+<p>
+  If Azure Search can't include all results in a single response, the response returned will include a
+  continuation token that can be passed to ContinueSearch to retrieve more results.
+  See <code data-dev-comment-type="c">DocumentSearchResult.ContinuationToken</code>
+  for more information.
+</p>
+<p>
+  Note that this method is not meant to help you implement paging of search results. You can implement
+  paging using the <code data-dev-comment-type="c">Top</code> and <code data-dev-comment-type="c">Skip</code>
+  parameters to the
+<code data-dev-comment-type="c">Search</code>
+  method.
+</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Search_IDocumentsOperations_ContinueSearchWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.ContinueSearchWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Search_IDocumentsOperations_ContinueSearchWithHttpMessagesAsync__1_Microsoft_Azure_Search_Models_SearchContinuationToken_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.ContinueSearchWithHttpMessagesAsync``1(Microsoft.Azure.Search.Models.SearchContinuationToken,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ContinueSearchWithHttpMessagesAsync&lt;T&gt;(SearchContinuationToken, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the next page of search results from the Azure Search index.
+<a href="https://docs.microsoft.com/rest/api/searchservice/Search-Documents"></a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;&gt;&gt; ContinueSearchWithHttpMessagesAsync&lt;T&gt; (Microsoft.Azure.Search.Models.SearchContinuationToken continuationToken, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchContinuationToken.html">SearchContinuationToken</a></td>
+        <td><span class="parametername">continuationToken</span></td>
+        <td><p>Encapsulates the state required to fetch the next page of search results from the index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchRequestOptions.html">SearchRequestOptions</a></td>
+        <td><span class="parametername">searchRequestOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.rest.azure.azureoperationresponse-1">AzureOperationResponse</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.DocumentSearchResult-1.html">DocumentSearchResult</a>&lt;<span class="xref">T</span>&gt;&gt;&gt;</td>
+        <td><p>Response containing the documents matching the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The CLR type that maps to the index schema. Instances of this type can be retrieved as documents
+from the index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Search_IDocumentsOperations_ContinueSearchWithHttpMessagesAsync__1_Microsoft_Azure_Search_Models_SearchContinuationToken_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  The generic overloads of the ContinueSearch, ContinueSearchAsync, and ContinueSearchWithHttpMessagesAsync
+  methods support mapping of Azure Search field types to .NET types via the type parameter T. See 
+<a class="xref" href="Microsoft.Azure.Search.IDocumentsOperations.html#Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync__1_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_">GetWithHttpMessagesAsync&lt;T&gt;(String, IEnumerable&lt;String&gt;, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</a>
+  for more details on the type mapping.
+</p>
+<p>
+  If Azure Search can't include all results in a single response, the response returned will include a
+  continuation token that can be passed to ContinueSearch to retrieve more results.
+  See <code data-dev-comment-type="c">DocumentSearchResult.ContinuationToken</code>
+  for more information.
+</p>
+<p>
+  Note that this method is not meant to help you implement paging of search results. You can implement
+  paging using the <code data-dev-comment-type="c">Top</code> and <code data-dev-comment-type="c">Skip</code>
+  parameters to the
+<code data-dev-comment-type="c">Search</code>
+  method.
+</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Search_IDocumentsOperations_CountWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.CountWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Search_IDocumentsOperations_CountWithHttpMessagesAsync_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.CountWithHttpMessagesAsync(Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">CountWithHttpMessagesAsync(SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Queries the number of documents in the Azure Search index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;long&gt;&gt; CountWithHttpMessagesAsync (Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchRequestOptions.html">SearchRequestOptions</a></td>
+        <td><span class="parametername">searchRequestOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.rest.azure.azureoperationresponse-1">AzureOperationResponse</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetWithHttpMessagesAsync(String, IEnumerable&lt;String&gt;, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a document from the Azure Search index.
+<a href="https://docs.microsoft.com/rest/api/searchservice/Lookup-Document"></a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.Document&gt;&gt; GetWithHttpMessagesAsync (string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the document to retrieve; See
+<a href="https://docs.microsoft.com/rest/api/searchservice/Naming-rules"></a> for the rules for constructing valid
+document keys.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">selectedFields</span></td>
+        <td><p>List of field names to retrieve for the document; Any field not retrieved will be missing from the
+returned document.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchRequestOptions.html">SearchRequestOptions</a></td>
+        <td><span class="parametername">searchRequestOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.rest.azure.azureoperationresponse-1">AzureOperationResponse</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.Document.html">Document</a>&gt;&gt;</td>
+        <td><p>Response containing the document.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The non-generic overloads of the Get, GetAsync, and GetWithHttpMessagesAsync methods make a best-effort
+attempt to map JSON types in the response payload to .NET types. This mapping does not have the benefit of
+precise type information from the index, so the mapping is not always correct. In particular, be aware of
+the following cases:</p>
+<ul><li>
+Any numeric value without a decimal point will be deserialized to System.Int64 (long in C#, int64 in F#).
+</li><li>
+Special double-precision floating point values such as NaN and Infinity will be deserialized as type
+System.String rather than System.Double, even if they are in arrays with regular floating point values.
+</li><li>
+Any string field with a value formatted like a DateTimeOffset will be deserialized incorrectly. This applies to
+such values in arrays of strings as well. We recommend storing such values in Edm.DateTimeOffset fields rather
+than Edm.String fields.
+</li><li>
+Any Edm.DateTimeOffset field will be deserialized as a System.DateTimeOffset, not System.DateTime.
+</li><li>
+Any empty JSON array will be deserialized as an array of System.Object (object[] in C#, obj[] in F#).
+</li><li>
+Any array of a primitive type will be deserialized as an array of its corresponding .NET type, not as an array of
+System.Object, unless the values cannot all be deserialized to the same type. For example, the arrays [3.14, "NaN"] and
+["hello", "2016-10-10T17:41:05.123-07:00"] will both deserialize as arrays of System.Object (object[] in C#, obj[] in F#).
+This is because special double values always deserialize as strings, while strings that look like DateTimeOffset always
+deserialize as DateTimeOffset.
+</li><li>
+Complex fields will be recursively deserialized into instances of type <code data-dev-comment-type="c">Document</code>. Similarly, complex
+collection fields will be deserialized into arrays of such instances.
+</li></ul>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync__1_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.GetWithHttpMessagesAsync``1(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetWithHttpMessagesAsync&lt;T&gt;(String, IEnumerable&lt;String&gt;, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a document from the Azure Search index.
+<a href="https://docs.microsoft.com/rest/api/searchservice/Lookup-Document"></a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;T&gt;&gt; GetWithHttpMessagesAsync&lt;T&gt; (string key, System.Collections.Generic.IEnumerable&lt;string&gt; selectedFields, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the document to retrieve; See
+<a href="https://docs.microsoft.com/rest/api/searchservice/Naming-rules"></a> for the rules for constructing valid
+document keys.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">selectedFields</span></td>
+        <td><p>List of field names to retrieve for the document; Any field not retrieved will have null or default as its
+corresponding property value in the returned object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchRequestOptions.html">SearchRequestOptions</a></td>
+        <td><span class="parametername">searchRequestOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.rest.azure.azureoperationresponse-1">AzureOperationResponse</a>&lt;<span class="xref">T</span>&gt;&gt;</td>
+        <td><p>Response containing the document.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The CLR type that maps to the index schema. Instances of this type can be retrieved as documents
+from the index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync__1_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The generic overloads of the Get, GetAsync, and GetWithHttpMessagesAsync methods support mapping of Azure
+Search field types to .NET types via the type parameter T. Note that all Azure Search field types except
+collections are nullable, so we recommend using nullable types for the properties of T.
+The type mapping is as follows:</p>
+<table><thead><tr><th>Azure Search field type</th><th>.NET type</th></tr></thead><tbody><tr><td>Edm.String</td><td>System.String (string in C# and F#)</td></tr><tr><td>Edm.Boolean</td><td>System.Nullable&lt;System.Boolean&gt; (bool? in C#, Nullable&lt;bool&gt; in F#)</td></tr><tr><td>Edm.Double</td><td>System.Nullable&lt;System.Double&gt; (double? in C#, Nullable&lt;float&gt; in F#)</td></tr><tr><td>Edm.Int32</td><td>System.Nullable&lt;System.Int32&gt; (int? in C#, Nullable&lt;int&gt; in F#)</td></tr><tr><td>Edm.Int64</td><td>System.Nullable&lt;System.Int64&gt; (long? in C#, Nullable&lt;int64&gt; in F#)</td></tr><tr><td>Edm.DateTimeOffset</td><td>
+System.Nullable&lt;System.DateTimeOffset&gt; (DateTimeOffset? in C#, Nullable&lt;DateTimeOffset&gt; in F#) or
+System.Nullable&lt;System.DateTime&gt; (DateTime? in C#, Nullable&lt;DateTime&gt; in F#). Both types work, although we
+recommend using DateTimeOffset. When retrieving documents, DateTime values will always be in UTC. When indexing
+documents, DateTime values are interpreted as follows:
+<table><tbody><tr><td>UTC DateTime</td><td>Sent as-is to the index.</td></tr><tr><td>Local DateTime</td><td>Converted to UTC before being sent to the index.</td></tr><tr><td>DateTime with unspecified time zone</td><td>Assumed to be UTC and sent as-is to the index.</td></tr></tbody></table></td></tr><tr><td>Edm.GeographyPoint</td><td><code data-dev-comment-type="c">Microsoft.Spatial.GeographyPoint</code></td></tr><tr><td>Edm.ComplexType</td><td>
+Any type that can be deserialized from the JSON objects in the complex field. This can be a value type or a reference type,
+but we recommend using a reference type since complex fields are nullable in Azure Search.
+</td></tr><tr><td>Collection(Edm.String)</td><td>IEnumerable&lt;System.String&gt; (seq&lt;string&gt; in F#)</td></tr><tr><td>Collection(Edm.Boolean)</td><td>IEnumerable&lt;System.Boolean&gt; (seq&lt;bool&gt; in F#)</td></tr><tr><td>Collection(Edm.Double)</td><td>IEnumerable&lt;System.Double&gt; (seq&lt;float&gt; in F#)</td></tr><tr><td>Collection(Edm.Int32)</td><td>IEnumerable&lt;System.Int32&gt; (seq&lt;int&gt; in F#)</td></tr><tr><td>Collection(Edm.Int64)</td><td>IEnumerable&lt;System.Int64&gt; (seq&lt;int64&gt; in F#)</td></tr><tr><td>Collection(Edm.DateTimeOffset)</td><td>
+IEnumerable&lt;System.DateTimeOffset&gt; or IEnumerable&lt;System.DateTime&gt; (seq&lt;DateTimeOffset&gt; or
+seq&lt;DateTime&gt; in F#). Both types work, although we recommend using IEnumerable&lt;System.DateTimeOffset&gt;.
+See the notes above on Edm.DateTimeOffset for details.
+</td></tr><tr><td>Collection(Edm.GeographyPoint)</td><td>IEnumerable&lt;Microsoft.Spatial.GeographyPoint&gt; (seq&lt;GeographyPoint&gt; in F#)</td></tr><tr><td>Collection(Edm.ComplexType)</td><td>
+IEnumerable&lt;U&gt; (seq&lt;U&gt; in F#) where U is any type that can be deserialized from the JSON objects in the complex
+collection field. This can be a value type or a reference type.
+</td></tr></tbody></table>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Search_IDocumentsOperations_IndexWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.IndexWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Search_IDocumentsOperations_IndexWithHttpMessagesAsync_Microsoft_Azure_Search_Models_IndexBatch_Microsoft_Azure_Search_Models_Document__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.IndexWithHttpMessagesAsync(Microsoft.Azure.Search.Models.IndexBatch{Microsoft.Azure.Search.Models.Document},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">IndexWithHttpMessagesAsync(IndexBatch&lt;Document&gt;, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a batch of upload, merge, and/or delete actions to the Azure Search index.
+<a href="https://docs.microsoft.com/rest/api/searchservice/addupdate-or-delete-documents"></a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt;&gt; IndexWithHttpMessagesAsync (Microsoft.Azure.Search.Models.IndexBatch&lt;Microsoft.Azure.Search.Models.Document&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.IndexBatch-1.html">IndexBatch</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.Document.html">Document</a>&gt;</td>
+        <td><span class="parametername">batch</span></td>
+        <td><p>The batch of index actions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchRequestOptions.html">SearchRequestOptions</a></td>
+        <td><span class="parametername">searchRequestOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.rest.azure.azureoperationresponse-1">AzureOperationResponse</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.DocumentIndexResult.html">DocumentIndexResult</a>&gt;&gt;</td>
+        <td><p>Response containing the status of operations for all actions in the batch.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Search_IDocumentsOperations_IndexWithHttpMessagesAsync_Microsoft_Azure_Search_Models_IndexBatch_Microsoft_Azure_Search_Models_Document__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The non-generic overloads of the Index, IndexAsync, and IndexWithHttpMessagesAsync methods make a
+best-effort attempt to map JSON types in the response payload to .NET types. See
+<a class="xref" href="Microsoft.Azure.Search.IDocumentsOperations.html#Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_">GetWithHttpMessagesAsync(String, IEnumerable&lt;String&gt;, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</a>
+for more information.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Search.IndexBatchException.html">IndexBatchException</a></td>
+        <td><p>Thrown when some of the indexing actions failed, but other actions succeeded and modified the state of
+the index. This can happen when the Search Service is under heavy indexing load. It is important to
+explicitly catch this exception and check its
+<code data-dev-comment-type="c">IndexResult</code> property. This property reports the status
+of each indexing action in the batch, making it possible to determine the state of the index after a
+partial failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Search_IDocumentsOperations_IndexWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.IndexWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Search_IDocumentsOperations_IndexWithHttpMessagesAsync__1_Microsoft_Azure_Search_Models_IndexBatch___0__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.IndexWithHttpMessagesAsync``1(Microsoft.Azure.Search.Models.IndexBatch{``0},Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">IndexWithHttpMessagesAsync&lt;T&gt;(IndexBatch&lt;T&gt;, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a batch of upload, merge, and/or delete actions to the Azure Search index.
+<a href="https://docs.microsoft.com/rest/api/searchservice/addupdate-or-delete-documents"></a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentIndexResult&gt;&gt; IndexWithHttpMessagesAsync&lt;T&gt; (Microsoft.Azure.Search.Models.IndexBatch&lt;T&gt; batch, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.IndexBatch-1.html">IndexBatch&lt;T&gt;</a></td>
+        <td><span class="parametername">batch</span></td>
+        <td><p>The batch of index actions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchRequestOptions.html">SearchRequestOptions</a></td>
+        <td><span class="parametername">searchRequestOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.rest.azure.azureoperationresponse-1">AzureOperationResponse</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.DocumentIndexResult.html">DocumentIndexResult</a>&gt;&gt;</td>
+        <td><p>Response containing the status of operations for all actions in the batch.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The CLR type that maps to the index schema. Instances of this type can be stored as documents in the index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Search_IDocumentsOperations_IndexWithHttpMessagesAsync__1_Microsoft_Azure_Search_Models_IndexBatch___0__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The generic overloads of the Index, IndexAsync, and IndexWithHttpMessagesAsync methods support mapping of
+Azure Search field types to .NET types via the type parameter T. See
+<a class="xref" href="Microsoft.Azure.Search.IDocumentsOperations.html#Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync__1_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_">GetWithHttpMessagesAsync&lt;T&gt;(String, IEnumerable&lt;String&gt;, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</a>
+for more details on the type mapping.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Search.IndexBatchException.html">IndexBatchException</a></td>
+        <td><p>Thrown when some of the indexing actions failed, but other actions succeeded and modified the state of
+the index. This can happen when the Search Service is under heavy indexing load. It is important to
+explicitly catch this exception and check its
+<code data-dev-comment-type="c">IndexResult</code> property. This property reports the status
+of each indexing action in the batch, making it possible to determine the state of the index after a
+partial failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Search_IDocumentsOperations_SearchWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.SearchWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Search_IDocumentsOperations_SearchWithHttpMessagesAsync_System_String_Microsoft_Azure_Search_Models_SearchParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.SearchWithHttpMessagesAsync(System.String,Microsoft.Azure.Search.Models.SearchParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">SearchWithHttpMessagesAsync(String, SearchParameters, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Searches for documents in the Azure Search index.
+<a href="https://docs.microsoft.com/rest/api/searchservice/Search-Documents"></a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;&gt; SearchWithHttpMessagesAsync (string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">searchText</span></td>
+        <td><p>A full-text search query expression; Use null or &quot;*&quot; to match all documents. See
+<a href="https://docs.microsoft.com/rest/api/searchservice/Simple-query-syntax-in-Azure-Search"></a> for more information about search
+query syntax.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchParameters.html">SearchParameters</a></td>
+        <td><span class="parametername">searchParameters</span></td>
+        <td><p>Parameters to further refine the search query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchRequestOptions.html">SearchRequestOptions</a></td>
+        <td><span class="parametername">searchRequestOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.rest.azure.azureoperationresponse-1">AzureOperationResponse</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.DocumentSearchResult-1.html">DocumentSearchResult</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.Document.html">Document</a>&gt;&gt;&gt;</td>
+        <td><p>Response containing the documents matching the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Search_IDocumentsOperations_SearchWithHttpMessagesAsync_System_String_Microsoft_Azure_Search_Models_SearchParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  The non-generic overloads of the Search, SearchAsync, and SearchWithHttpMessagesAsync methods make a
+  best-effort attempt to map JSON types in the response payload to .NET types. See
+<a class="xref" href="Microsoft.Azure.Search.IDocumentsOperations.html#Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_">GetWithHttpMessagesAsync(String, IEnumerable&lt;String&gt;, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</a>
+  for more information.
+</p>
+<p>
+  If Azure Search can't include all results in a single response, the response returned will include a
+  continuation token that can be passed to ContinueSearch to retrieve more results.
+  See <code data-dev-comment-type="c">DocumentSearchResult.ContinuationToken</code>
+  for more information.
+</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Search_IDocumentsOperations_SearchWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.SearchWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Search_IDocumentsOperations_SearchWithHttpMessagesAsync__1_System_String_Microsoft_Azure_Search_Models_SearchParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.SearchWithHttpMessagesAsync``1(System.String,Microsoft.Azure.Search.Models.SearchParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">SearchWithHttpMessagesAsync&lt;T&gt;(String, SearchParameters, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Searches for documents in the Azure Search index.
+<a href="https://docs.microsoft.com/rest/api/searchservice/Search-Documents"></a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSearchResult&lt;T&gt;&gt;&gt; SearchWithHttpMessagesAsync&lt;T&gt; (string searchText, Microsoft.Azure.Search.Models.SearchParameters searchParameters, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">searchText</span></td>
+        <td><p>A full-text search query expression; Use null or &quot;*&quot; to match all documents. See
+<a href="https://docs.microsoft.com/rest/api/searchservice/Simple-query-syntax-in-Azure-Search"></a> for more information about search
+query syntax.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchParameters.html">SearchParameters</a></td>
+        <td><span class="parametername">searchParameters</span></td>
+        <td><p>Parameters to further refine the search query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchRequestOptions.html">SearchRequestOptions</a></td>
+        <td><span class="parametername">searchRequestOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.rest.azure.azureoperationresponse-1">AzureOperationResponse</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.DocumentSearchResult-1.html">DocumentSearchResult</a>&lt;<span class="xref">T</span>&gt;&gt;&gt;</td>
+        <td><p>Response containing the documents matching the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The CLR type that maps to the index schema. Instances of this type can be retrieved as documents
+from the index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Search_IDocumentsOperations_SearchWithHttpMessagesAsync__1_System_String_Microsoft_Azure_Search_Models_SearchParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  The generic overloads of the Search, SearchAsync, and SearchWithHttpMessagesAsync methods support mapping
+  of Azure Search field types to .NET types via the type parameter T. See 
+<a class="xref" href="Microsoft.Azure.Search.IDocumentsOperations.html#Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync__1_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_">GetWithHttpMessagesAsync&lt;T&gt;(String, IEnumerable&lt;String&gt;, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</a>
+  for more details on the type mapping.
+</p>
+<p>
+  If Azure Search can't include all results in a single response, the response returned will include a
+  continuation token that can be passed to ContinueSearch to retrieve more results.
+  See <code data-dev-comment-type="c">DocumentSearchResult.ContinuationToken</code>
+  for more information.
+</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Search_IDocumentsOperations_SuggestWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.SuggestWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Search_IDocumentsOperations_SuggestWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Search_Models_SuggestParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.SuggestWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Search.Models.SuggestParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">SuggestWithHttpMessagesAsync(String, String, SuggestParameters, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Suggests query terms based on input text and matching documents in the Azure Search index.
+<a href="https://docs.microsoft.com/rest/api/searchservice/Suggestions"></a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;Microsoft.Azure.Search.Models.Document&gt;&gt;&gt; SuggestWithHttpMessagesAsync (string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">searchText</span></td>
+        <td><p>The search text on which to base suggestions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">suggesterName</span></td>
+        <td><p>The name of the suggester as specified in the suggesters collection that's part of the index definition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SuggestParameters.html">SuggestParameters</a></td>
+        <td><span class="parametername">suggestParameters</span></td>
+        <td><p>Parameters to further refine the suggestion query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchRequestOptions.html">SearchRequestOptions</a></td>
+        <td><span class="parametername">searchRequestOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.rest.azure.azureoperationresponse-1">AzureOperationResponse</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.DocumentSuggestResult-1.html">DocumentSuggestResult</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.Document.html">Document</a>&gt;&gt;&gt;</td>
+        <td><p>Response containing the suggested text and documents matching the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Search_IDocumentsOperations_SuggestWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Search_Models_SuggestParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The non-generic overloads of the Suggest, SuggestAsync, and SuggestWithHttpMessagesAsync methods make a
+best-effort attempt to map JSON types in the response payload to .NET types. See
+<a class="xref" href="Microsoft.Azure.Search.IDocumentsOperations.html#Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_">GetWithHttpMessagesAsync(String, IEnumerable&lt;String&gt;, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</a>
+for more information.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Search_IDocumentsOperations_SuggestWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.SuggestWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Search_IDocumentsOperations_SuggestWithHttpMessagesAsync__1_System_String_System_String_Microsoft_Azure_Search_Models_SuggestParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Search.IDocumentsOperations.SuggestWithHttpMessagesAsync``1(System.String,System.String,Microsoft.Azure.Search.Models.SuggestParameters,Microsoft.Azure.Search.Models.SearchRequestOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">SuggestWithHttpMessagesAsync&lt;T&gt;(String, String, SuggestParameters, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Suggests query terms based on input text and matching documents in the Azure Search index.
+<a href="https://docs.microsoft.com/rest/api/searchservice/Suggestions"></a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Search.Models.DocumentSuggestResult&lt;T&gt;&gt;&gt; SuggestWithHttpMessagesAsync&lt;T&gt; (string searchText, string suggesterName, Microsoft.Azure.Search.Models.SuggestParameters suggestParameters, Microsoft.Azure.Search.Models.SearchRequestOptions searchRequestOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">searchText</span></td>
+        <td><p>The search text on which to base suggestions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">suggesterName</span></td>
+        <td><p>The name of the suggester as specified in the suggesters collection that's part of the index definition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SuggestParameters.html">SuggestParameters</a></td>
+        <td><span class="parametername">suggestParameters</span></td>
+        <td><p>Parameters to further refine the suggestion query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SearchRequestOptions.html">SearchRequestOptions</a></td>
+        <td><span class="parametername">searchRequestOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.rest.azure.azureoperationresponse-1">AzureOperationResponse</a>&lt;<a class="xref" href="../Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.DocumentSuggestResult-1.html">DocumentSuggestResult</a>&lt;<span class="xref">T</span>&gt;&gt;&gt;</td>
+        <td><p>Response containing the suggested text and documents matching the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The CLR type that maps to the index schema. Instances of this type can be retrieved as documents
+from the index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Search_IDocumentsOperations_SuggestWithHttpMessagesAsync__1_System_String_System_String_Microsoft_Azure_Search_Models_SuggestParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The generic overloads of the Suggest, SuggestAsync, and SuggestWithHttpMessagesAsync methods support
+mapping of Azure Search field types to .NET types via the type parameter T. See
+<a class="xref" href="Microsoft.Azure.Search.IDocumentsOperations.html#Microsoft_Azure_Search_IDocumentsOperations_GetWithHttpMessagesAsync__1_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_">GetWithHttpMessagesAsync&lt;T&gt;(String, IEnumerable&lt;String&gt;, SearchRequestOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</a>
+for more details on the type mapping.</p>
+</div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_Autocomplete_Microsoft_Azure_Search_IDocumentsOperations_System_String_System_String_Microsoft_Azure_Search_Models_AutocompleteParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_">DocumentsOperationsExtensions.Autocomplete(IDocumentsOperations, String, String, AutocompleteParameters, SearchRequestOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_AutocompleteAsync_Microsoft_Azure_Search_IDocumentsOperations_System_String_System_String_Microsoft_Azure_Search_Models_AutocompleteParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Threading_CancellationToken_">DocumentsOperationsExtensions.AutocompleteAsync(IDocumentsOperations, String, String, AutocompleteParameters, SearchRequestOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_ContinueSearch_Microsoft_Azure_Search_IDocumentsOperations_Microsoft_Azure_Search_Models_SearchContinuationToken_Microsoft_Azure_Search_Models_SearchRequestOptions_">DocumentsOperationsExtensions.ContinueSearch(IDocumentsOperations, SearchContinuationToken, SearchRequestOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_ContinueSearch__1_Microsoft_Azure_Search_IDocumentsOperations_Microsoft_Azure_Search_Models_SearchContinuationToken_Microsoft_Azure_Search_Models_SearchRequestOptions_">DocumentsOperationsExtensions.ContinueSearch&lt;T&gt;(IDocumentsOperations, SearchContinuationToken, SearchRequestOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_ContinueSearchAsync_Microsoft_Azure_Search_IDocumentsOperations_Microsoft_Azure_Search_Models_SearchContinuationToken_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Threading_CancellationToken_">DocumentsOperationsExtensions.ContinueSearchAsync(IDocumentsOperations, SearchContinuationToken, SearchRequestOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_ContinueSearchAsync__1_Microsoft_Azure_Search_IDocumentsOperations_Microsoft_Azure_Search_Models_SearchContinuationToken_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Threading_CancellationToken_">DocumentsOperationsExtensions.ContinueSearchAsync&lt;T&gt;(IDocumentsOperations, SearchContinuationToken, SearchRequestOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_Count_Microsoft_Azure_Search_IDocumentsOperations_Microsoft_Azure_Search_Models_SearchRequestOptions_">DocumentsOperationsExtensions.Count(IDocumentsOperations, SearchRequestOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_CountAsync_Microsoft_Azure_Search_IDocumentsOperations_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Threading_CancellationToken_">DocumentsOperationsExtensions.CountAsync(IDocumentsOperations, SearchRequestOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_Get_Microsoft_Azure_Search_IDocumentsOperations_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_">DocumentsOperationsExtensions.Get(IDocumentsOperations, String, IEnumerable&lt;String&gt;, SearchRequestOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_Get__1_Microsoft_Azure_Search_IDocumentsOperations_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_">DocumentsOperationsExtensions.Get&lt;T&gt;(IDocumentsOperations, String, IEnumerable&lt;String&gt;, SearchRequestOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_GetAsync_Microsoft_Azure_Search_IDocumentsOperations_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Threading_CancellationToken_">DocumentsOperationsExtensions.GetAsync(IDocumentsOperations, String, IEnumerable&lt;String&gt;, SearchRequestOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_GetAsync__1_Microsoft_Azure_Search_IDocumentsOperations_System_String_System_Collections_Generic_IEnumerable_System_String__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Threading_CancellationToken_">DocumentsOperationsExtensions.GetAsync&lt;T&gt;(IDocumentsOperations, String, IEnumerable&lt;String&gt;, SearchRequestOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_Index_Microsoft_Azure_Search_IDocumentsOperations_Microsoft_Azure_Search_Models_IndexBatch_Microsoft_Azure_Search_Models_Document__Microsoft_Azure_Search_Models_SearchRequestOptions_">DocumentsOperationsExtensions.Index(IDocumentsOperations, IndexBatch&lt;Document&gt;, SearchRequestOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_Index__1_Microsoft_Azure_Search_IDocumentsOperations_Microsoft_Azure_Search_Models_IndexBatch___0__Microsoft_Azure_Search_Models_SearchRequestOptions_">DocumentsOperationsExtensions.Index&lt;T&gt;(IDocumentsOperations, IndexBatch&lt;T&gt;, SearchRequestOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_IndexAsync_Microsoft_Azure_Search_IDocumentsOperations_Microsoft_Azure_Search_Models_IndexBatch_Microsoft_Azure_Search_Models_Document__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Threading_CancellationToken_">DocumentsOperationsExtensions.IndexAsync(IDocumentsOperations, IndexBatch&lt;Document&gt;, SearchRequestOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_IndexAsync__1_Microsoft_Azure_Search_IDocumentsOperations_Microsoft_Azure_Search_Models_IndexBatch___0__Microsoft_Azure_Search_Models_SearchRequestOptions_System_Threading_CancellationToken_">DocumentsOperationsExtensions.IndexAsync&lt;T&gt;(IDocumentsOperations, IndexBatch&lt;T&gt;, SearchRequestOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_Search_Microsoft_Azure_Search_IDocumentsOperations_System_String_Microsoft_Azure_Search_Models_SearchParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_">DocumentsOperationsExtensions.Search(IDocumentsOperations, String, SearchParameters, SearchRequestOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_Search__1_Microsoft_Azure_Search_IDocumentsOperations_System_String_Microsoft_Azure_Search_Models_SearchParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_">DocumentsOperationsExtensions.Search&lt;T&gt;(IDocumentsOperations, String, SearchParameters, SearchRequestOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_SearchAsync_Microsoft_Azure_Search_IDocumentsOperations_System_String_Microsoft_Azure_Search_Models_SearchParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Threading_CancellationToken_">DocumentsOperationsExtensions.SearchAsync(IDocumentsOperations, String, SearchParameters, SearchRequestOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_SearchAsync__1_Microsoft_Azure_Search_IDocumentsOperations_System_String_Microsoft_Azure_Search_Models_SearchParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Threading_CancellationToken_">DocumentsOperationsExtensions.SearchAsync&lt;T&gt;(IDocumentsOperations, String, SearchParameters, SearchRequestOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_Suggest_Microsoft_Azure_Search_IDocumentsOperations_System_String_System_String_Microsoft_Azure_Search_Models_SuggestParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_">DocumentsOperationsExtensions.Suggest(IDocumentsOperations, String, String, SuggestParameters, SearchRequestOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_Suggest__1_Microsoft_Azure_Search_IDocumentsOperations_System_String_System_String_Microsoft_Azure_Search_Models_SuggestParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_">DocumentsOperationsExtensions.Suggest&lt;T&gt;(IDocumentsOperations, String, String, SuggestParameters, SearchRequestOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_SuggestAsync_Microsoft_Azure_Search_IDocumentsOperations_System_String_System_String_Microsoft_Azure_Search_Models_SuggestParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Threading_CancellationToken_">DocumentsOperationsExtensions.SuggestAsync(IDocumentsOperations, String, String, SuggestParameters, SearchRequestOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Search.DocumentsOperationsExtensions.html#Microsoft_Azure_Search_DocumentsOperationsExtensions_SuggestAsync__1_Microsoft_Azure_Search_IDocumentsOperations_System_String_System_String_Microsoft_Azure_Search_Models_SuggestParameters_Microsoft_Azure_Search_Models_SearchRequestOptions_System_Threading_CancellationToken_">DocumentsOperationsExtensions.SuggestAsync&lt;T&gt;(IDocumentsOperations, String, String, SuggestParameters, SearchRequestOptions, CancellationToken)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
